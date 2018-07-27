@@ -12,6 +12,12 @@
 		3669D49E2100ACD500448242 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3669D49C2100ACD500448242 /* Main.storyboard */; };
 		3669D4A02100ACD800448242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3669D49F2100ACD800448242 /* Assets.xcassets */; };
 		3669D4A32100ACD800448242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3669D4A12100ACD800448242 /* LaunchScreen.storyboard */; };
+		3669D4AB2100C8C200448242 /* DotDragger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3669D4AA2100C8C200448242 /* DotDragger.swift */; };
+		3669D4AD2100E7C300448242 /* SupportCalculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3669D4AC2100E7C300448242 /* SupportCalculations.swift */; };
+		3669D4B12104820800448242 /* QuadFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3669D4B02104820800448242 /* QuadFrame.swift */; };
+		3669D4B32106141700448242 /* Points.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3669D4B22106141700448242 /* Points.swift */; };
+		3669D4B52108A7F900448242 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3669D4B42108A7F900448242 /* Validation.swift */; };
+		36DAF000210B10B90096FE04 /* QuadDragger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DAEFFF210B10B90096FE04 /* QuadDragger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		3669D49F2100ACD800448242 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3669D4A22100ACD800448242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3669D4A42100ACD800448242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3669D4AA2100C8C200448242 /* DotDragger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotDragger.swift; sourceTree = "<group>"; };
+		3669D4AC2100E7C300448242 /* SupportCalculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportCalculations.swift; sourceTree = "<group>"; };
+		3669D4B02104820800448242 /* QuadFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadFrame.swift; sourceTree = "<group>"; };
+		3669D4B22106141700448242 /* Points.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Points.swift; sourceTree = "<group>"; };
+		3669D4B42108A7F900448242 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		36DAEFFF210B10B90096FE04 /* QuadDragger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadDragger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +68,26 @@
 			children = (
 				3669D4982100ACD500448242 /* AppDelegate.swift */,
 				3669D49A2100ACD500448242 /* ViewController.swift */,
+				3669D4B62108C12D00448242 /* Bezier */,
+				3669D4B22106141700448242 /* Points.swift */,
+				3669D4B42108A7F900448242 /* Validation.swift */,
+				3669D4AC2100E7C300448242 /* SupportCalculations.swift */,
 				3669D49C2100ACD500448242 /* Main.storyboard */,
 				3669D49F2100ACD800448242 /* Assets.xcassets */,
 				3669D4A12100ACD800448242 /* LaunchScreen.storyboard */,
 				3669D4A42100ACD800448242 /* Info.plist */,
 			);
 			path = DragAndDrop;
+			sourceTree = "<group>";
+		};
+		3669D4B62108C12D00448242 /* Bezier */ = {
+			isa = PBXGroup;
+			children = (
+				3669D4B02104820800448242 /* QuadFrame.swift */,
+				3669D4AA2100C8C200448242 /* DotDragger.swift */,
+				36DAEFFF210B10B90096FE04 /* QuadDragger.swift */,
+			);
+			path = Bezier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +161,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3669D4B12104820800448242 /* QuadFrame.swift in Sources */,
 				3669D49B2100ACD500448242 /* ViewController.swift in Sources */,
+				3669D4AB2100C8C200448242 /* DotDragger.swift in Sources */,
+				36DAF000210B10B90096FE04 /* QuadDragger.swift in Sources */,
 				3669D4992100ACD500448242 /* AppDelegate.swift in Sources */,
+				3669D4B32106141700448242 /* Points.swift in Sources */,
+				3669D4AD2100E7C300448242 /* SupportCalculations.swift in Sources */,
+				3669D4B52108A7F900448242 /* Validation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6QJD9S5LP3;
 				INFOPLIST_FILE = DragAndDrop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6QJD9S5LP3;
 				INFOPLIST_FILE = DragAndDrop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
